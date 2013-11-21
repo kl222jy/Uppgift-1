@@ -120,6 +120,7 @@ namespace Whitebox
             double[] sides = { -1, 1, 1 };
             Triangle t = new Triangle(sides);
         }
+        [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void PointAbcNoEqualCoords()
         {
@@ -128,12 +129,13 @@ namespace Whitebox
             Point c = new Point(0, 0);
             Triangle t = new Triangle(a, b, c);
         }
+        [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void PointArrayNoEqualCoords()
         {
             Point a = new Point(1, 1);
             Point b = new Point(1, 1);
-            Point c = new Point(1, 1);
+            Point c = new Point(13, 1);
             Point[] points = { a, b, c };
             Triangle t = new Triangle(points);
         }
