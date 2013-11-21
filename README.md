@@ -6,7 +6,7 @@ Whitebox testningen återfinns i mappen Whitebox
 #Blackbox
 
 ##Indata för testning
-triangel.exe x y z
+triangel.exe <indata>
 
 ##Testfall
 
@@ -54,4 +54,4 @@ triangel.exe x y z
 	18	|	inga lika	|	Misslyckat	|	Samma resultat för fler olika värden än 3
 
 ##Analys
-Programmet kontrollerar inte att inmatat värde resulterar i en giltig triangel. Inga kontroller görs av indata, vare sig gällande antal parametrar eller att det faktiskt är siffror. Inga kontroller görs för att resultatet blir en giltig triangel. Programmet verkar bara ta de parametrar som anges och kontrollera om de är lika varandra.
+Inga kontroller görs av indata, vare sig gällande antal parametrar eller att det faktiskt är siffror. Inga kontroller görs för att resultatet blir en giltig triangel. Programmet verkar bara ta de parametrar som anges och kontrollera om de är lika varandra. Programmet kan inte hantera tal med decimaler. Det kastas undantag till användaren vid inmatning av annat än siffror.
