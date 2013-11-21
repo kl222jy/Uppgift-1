@@ -58,14 +58,16 @@ namespace Triangles
 
         public Triangle(Point[] s)
         {
-            if ((s[0].x == s[1].x && s[0].y == s[1].y) || (s[1].x == s[2].x && s[1].y == s[2].y) || (s[2].x == s[0].x && s[2].y == s[0].y))
-            {
-                throw new ArgumentException("Om 2 koordinater har samma värde går det inte att rita triangeln");
-            }
             if (s.Length != 3)
             {
                 throw new ArgumentException("A triangle exists of 3 points.");
             }
+
+            if ((s[0].x == s[1].x && s[0].y == s[1].y) || (s[1].x == s[2].x && s[1].y == s[2].y) || (s[2].x == s[0].x && s[2].y == s[0].y))
+            {
+                throw new ArgumentException("Om 2 koordinater har samma värde går det inte att rita triangeln");
+            }
+
 
 
             sides = new double[s.Length];
