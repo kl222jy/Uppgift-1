@@ -6,7 +6,7 @@ Whitebox testningen återfinns i mappen Whitebox
 #Blackbox
 
 ##Indata för testning
-triangel.exe <indata>
+triangel.exe indata
 
 ##Testfall
 
