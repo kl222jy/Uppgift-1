@@ -33,6 +33,7 @@ triangel.exe x y z
 
 ##Resultat
    Testfall	|	Utdata	|	Resultat	|	Kommentar
+   ---------|-----------------|----------------|---------------------
 	1	|	liksidig	|	Lyckat	|	Kan hantera heltal och se att 3 värden är lika
 	2	|	likbent	|	Lyckat	|	Kan göra jämförelser och svarar att en triangel med 2 lika sidor är likbent
 	3	|	inga lika	|	Lyckat	|	Uppfattar att 3 olika sidor ger en triangel utan lika sidor
